@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <title>Meme Generator</title>
+</head>
+
+<body>
+    <header>
+
+        <h1>MEME GENERATOR</h1>
+
+        <h2>Create the next meme to go viral!</h2>
+
+    </header>
+
+    <main>
+        <form>
+            <div class="memeForm" id="memeForm">
+                <div class="upload">
+                    <div class="imgUpload">
+                        <label class="imgLabel" for="img">Upload image:</label>
+
+                        <input type="file" id="img" name="img" accept="image/*">
+                    </div>
+
+                    <div class="or">or</div>
+
+                    <div class="imgUrl">
+                        <label class="imgLabel" for="url">Paste Image URL:</label>
+                        <input type="url" name="url" id="url">
+                    </div>
+
+                </div>
+
+
+                <label for="topText" class="topLabel">Type your desired top text here:</label>
+                <input type="text" name="topText" id="topText">
+
+                <label for="botText">Type your desired bottom text here:</label>
+                <input type="text" name="botText" id="botText">
+
+                <button class="submit" id="submit" type="submit">Generate Meme</button>
+            </div>
+
+        </form>
+
+        <button class="reset" id="reset">Start a New Meme</button>
+
+        <div class="memes" id="memes">
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
